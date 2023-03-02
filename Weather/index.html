@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <title>Wireframe</title>
+  </head>
+  <body>
+    <div class="border container">
+      <h1><strong>Weather</strong>Forecast ☔️</h1>
+      <div class="row">
+        <div class="col date" id="date-today">Wednesday, 25th January 2023</div>
+        <form id="submit" class="col">
+          <input
+            type="text"
+            class="rounded"
+            id="city-input"
+            placeholder="Search city here..."
+            autocomplete="off"
+            autofocus="on"
+          />
+          <button type="submit" class="button rounded">Search</button>
+        </form>
+      </div>
+      <div class="city" id="changed-city">Nairobi</div>
+      <div class="row">
+        <div class="col-4">
+          <span class="temperature-today col-4" id="temp"> 28</span>
+          <span class="units"
+            ><a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span
+          >
+        </div>
+        <div class="weather-icon col-4">☀️</div>
+        <div class="weather-today col-4">
+          <span id="description">Sunny</span>
+          <br />
+          Low: <span id="low">14°</span>
+          <br />
+          Humidity:<span id="humidity">37%</span>
+          <br />
+          Wind: <span id="wind">11mph</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label-five col-6">5-day Forecast</div>
+      </div>
+      <div class="row">
+        <div class="five-day col">
+          Tomorrow
+          <div class="icon">☀️</div>
+          <strong>28°</strong> /<span class="low"> 14°</span>
+        </div>
+        <div class="five-day col">
+          Fri
+          <div class="icon">☀️</div>
+          <strong>27°</strong> /<span class="low"> 14°</span>
+        </div>
+        <div class="five-day col">
+          Sat
+          <div class="icon">☀️</div>
+          <strong>27°</strong> /<span class="low"> 14°</span>
+        </div>
+        <div class="five-day col">
+          Sun
+          <div class="icon">☀️</div>
+          <strong>28°</strong> /<span class="low"> 14°</span>
+        </div>
+        <div class="five-day col">
+          Mon
+          <div class="icon">☀️</div>
+          <strong>28°</strong> /<span class="low"> 15°</span>
+        </div>
+      </div>
+    </div>
+    <p>Coded by Tracy Moige</p>
+    <script src="src/index.js"></script>
+  </body>
+</html>

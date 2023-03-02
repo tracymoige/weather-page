@@ -1,0 +1,88 @@
+body,
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+body {
+  font-family: "Chakra Petch", sans-serif;
+  padding: 100px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+}
+
+.container {
+  display: block;
+  padding: 20px;
+  width: 800px;
+  min-width: 600px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../images/sunny.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date {
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.city {
+  font-size: 30px;
+}
+
+.temperature-today {
+  font-size: 80px;
+  text-align: center;
+  padding: 40px;
+}
+
+.units {
+  font-size: 15px;
+}
+
+.weather-icon {
+  font-size: 90px;
+  text-align: center;
+  padding: 15px;
+}
+
+.weather-today {
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+  padding: 40px;
+}
+
+.label-five {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.five-day {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 0;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.low {
+  color: #000;
+}
+
+.button {
+  background-color: transparent;
+}
