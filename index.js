@@ -37,35 +37,21 @@ currentDate.innerHTML = `${day}, ${date} ${month} ${year}`;
 
 //
 
-// function showCity(event) {
-//   event.preventDefault();
-//   let city = document.querySelector("#city-input");
-//   let changedCity = document.querySelector("#changed-city");
-//   changedCity.innerHTML = `${city.value}`;
-// }
+function showCelsius(event) {
+  event.preventDefault();
+  temp.innerHTML = `20`;
+}
 
-// let submit = document.querySelector("#submit");
-// submit.addEventListener("submit", showCity);
+let celsius = document.querySelector("#celsius-link");
+celsius.addEventListener("click", showCelsius);
 
-//
+function showFahrenheit(event) {
+  event.preventDefault();
+  temp.innerHTML = `80`;
+}
 
-// let temperature = document.querySelector("#temp");
-
-// function showCelsius(event) {
-//   event.preventDefault();
-//   temperature.innerHTML = `20`;
-// }
-
-// let celsius = document.querySelector("#celsius-link");
-// celsius.addEventListener("click", showCelsius);
-
-// function showFahrenheit(event) {
-//   event.preventDefault();
-//   temperature.innerHTML = `80`;
-// }
-
-// let fahrenheit = document.querySelector("#fahrenheit-link");
-// fahrenheit.addEventListener("click", showFahrenheit);
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", showFahrenheit);
 
 // Location
 
