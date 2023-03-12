@@ -74,19 +74,18 @@ function showTemperature(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "aa496803e5bcab4c41ca90ff3cc746bd";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let apiKey = "cf98bb3e0e4t6adf8aea6ba301oc5bc2";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 
 function showCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#city-input").value;
-  let changedCity = document.querySelector("#changed-city");
-  changedCity.innerHTML = `${city}`;
-  searchCity(city);
+  let cityInput = document.querySelector("#city-input");
+  searchCity(cityInput.value);
 }
+
+searchCity("Nairobi");
 
 let submit = document.querySelector("#submit");
 submit.addEventListener("submit", showCity);

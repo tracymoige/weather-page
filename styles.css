@@ -27,9 +27,6 @@ p {
   border-radius: 20px;
   position: relative;
   margin: 0 auto;
-  background-image: url(../images/sunny.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .date {
